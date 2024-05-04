@@ -1,0 +1,96 @@
+/*El contenedor div de la seccion */
+.Info_section {
+    background-color: rgba(221, 174, 171, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+
+}
+/* la informacion que contiene el div de la sección */
+.Info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+/* los iconos */
+.Info-img {
+    width: 75px;
+    height: 75px;
+    filter: contrast(0.4);
+}
+/* el titulo de debajo de cada icono */
+.Info-tittle {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(91, 89, 88, 1);
+}
+
+/* eltexto de cada icono debajo del titulo */
+.Info-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    padding: 0.5rem;
+    width: 100px;
+
+}
+
+/* mediaqueries responsive */
+@media only screen and (max-width: 1210px) {
+    .Info-img {
+        width: 55px;
+        height: 55px;
+    }
+    .Info-tittle {
+        font-size: 15px;
+    }
+    .Info-text {
+        font-size: 12px;
+    
+    }
+}
+
+@media only screen and (max-width: 790px) {
+
+    .Info-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .Info-tittle {
+        font-size: 15px;
+    }
+
+    .Info-text {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+
+    .Info-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .Info-tittle {
+        font-size: 14px;
+        width: 80px;
+    }
+
+    .Info-text {
+        font-size: 10px;
+        width: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 625px) {
+    .Info_section {
+        flex-wrap: wrap;
+    }
+}

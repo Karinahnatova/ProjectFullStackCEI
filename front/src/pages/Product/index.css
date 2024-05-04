@@ -1,0 +1,214 @@
+/* contenedor lightbox */
+.Lightbox {
+    padding: 4rem;
+}
+
+/* botón hacia atrás */
+.Lightbox-btn-arrow-back {
+    cursor: pointer;
+}
+
+/* estilos de la imagen */
+.Lightbox-img img{
+    width: 292px;
+    height: 378px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+/* estilos del contenedor de la imagen */
+.Lightbox-div-img {
+    position: relative;
+}
+
+/* titulo del lightbox */
+.Lightbox-tittle {
+    font-size: 32px;
+    display: flex;
+    gap: 1rem;
+}
+
+/* h4 del lightbox */
+.Lightbox-h4 {
+    color: rgb(48, 48, 48);
+    font-size: 32px;
+    width: 300px;
+    padding: 1rem 0;
+}
+
+/* contenedor que incluye toda la informacion del lightbox */
+.Lighthbox-product-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    gap: 4rem;
+}
+
+.Lightbox-product-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Div-Product-info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 1rem;
+
+}
+
+/* estilos de los botones de la cantidad, no son funcionales, solo aumentan la cantidad o disminuyen, no tienen otra funcionalidad */
+.Div-Product-quantity {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.btn-quant {
+    border: none;
+    background-color: white;
+    font-size: 24px;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+
+.Span-quant-number {
+    font-size: 24px;
+}
+
+/* botón de añadir a la cesta */
+.Lightbox-button-add-to-cart {
+  width: 182px;
+  height: 58px;
+  background-color: rgba(221, 174, 171, 1);
+  color: white;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+/* descripción del producto */
+.Div-Product-despricption {
+    font-size: 15px;
+    font-weight: 200;
+    width: 300px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+
+}
+
+/* precio */
+.Span-Product-price {
+    font-size: 36px;
+}
+
+
+.Lightbox-div-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* mediaqueries responsive */
+@media screen and (max-width: 830px) {
+
+    .Lightbox-h4 {
+        font-size: 25px;
+        width: 250px;
+    }
+
+    .Lightbox-img img {
+        width: 192px;
+        height: 278px;
+        border-radius: 20px;
+    }
+
+    .Lighthbox-product-info {
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .Span-Product-price {
+        font-size: 30px;
+        padding-top: 0.3rem;
+    }
+
+    .Span-quant-number {
+        font-size: 20px;
+    }
+
+    .Div-Product-despricption {
+        font-size: 13px;
+        width: 250px;
+    
+    }
+
+    .Div-Product-info {
+        width: 250px;
+    
+    }
+
+}
+
+@media screen and (max-width: 635px) {
+
+    .Lighthbox-product-info {
+        flex-direction: column;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .Lightbox-h4 {
+        font-size: 20px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .Span-Product-price {
+        font-size: 20px;
+        padding-top: 0.3rem;
+    }
+
+    .Span-quant-number {
+        font-size: 20px;
+    }
+
+    .btn-quant {
+        font-size: 20px;
+    }
+
+    .Div-Product-info {
+        padding: 0.5rem;
+    
+    }
+
+    .Lightbox-button-add-to-cart {
+        width: 130px;
+        height: 50px;
+        font-size: 12px;
+        margin-top: 1rem;
+      }
+
+}
+
+@media screen and (max-width: 350px) {
+    .Lightbox-h4 {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .Div-Product-despricption {
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .Div-Product-info {
+        width: 200px;
+    }
+
+}

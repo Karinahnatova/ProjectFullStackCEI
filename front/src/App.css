@@ -1,0 +1,27 @@
+/* fuentes que se usan: inter para toda la pagina web y lora unicamente para el logo */
+@font-face {
+  font-family: Inter;
+  src: url( './assets/fonts/Inter/Inter.ttf');
+}
+
+@font-face {
+  font-family: Lora;
+  src: url( './assets/fonts/Lora/Lora.ttf');
+}
+
+/* reseteo de estilos */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Inter;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}

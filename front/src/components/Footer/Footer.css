@@ -1,0 +1,77 @@
+/* contenedor footer */
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 4rem;
+}
+
+/* logo ELA */
+.Footer-logo-h1 {
+    font-family: Lora;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+/* Los links */
+.Footer-menu-ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0 2rem ;
+}
+
+/* estios de cada link */
+.Footer-menu-li a{
+    text-decoration: none;
+    color: rgba(91, 89, 88, 1);
+    font-weight: 600;
+}
+
+/* sal apuntar con el cursor aparece el texto subrallado y más claro */
+.Footer-menu-li a:hover {
+    text-decoration: underline;
+    color: rgb(138, 137, 137);
+}
+
+/* los iconos */
+.Footer-ico-img {
+    width: 35px;
+    height: 35px;
+    filter: contrast(0.5);
+    cursor: pointer;
+}
+
+/* contenedor picture donde aparecen los iconos */
+.Footer-picture {
+    padding: 1rem;
+}
+
+/* mediaqueries responsive */
+@media screen and (max-width: 550px) {
+    .Footer-ico-img {
+        width: 20px;
+        height: 20px;
+    }
+    .Footer-logo-h1 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .Footer-menu-li a{
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Footer-menu-li a{
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

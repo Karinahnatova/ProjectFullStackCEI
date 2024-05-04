@@ -1,0 +1,89 @@
+/* contenedor de categorias */
+.Categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+/* imagenes de las categorias con transición*/
+.Categories-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+/* al hacerse el hover, se implementa una transición en la que la imagen reduce de escala */
+.Categories-img:hover{
+    transform: scale(0.9);
+}
+
+/* Cada contenedor de la imagen con su texto */
+.Categories-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Categorie-name:hover {
+    text-decoration: underline;
+    color: rgb(72, 72, 72)
+}
+
+
+.Categories-tittle-h1 {
+    text-align: center;
+    padding: 6rem 0 1rem;
+}
+
+.Categories-tittle-p {
+    text-align: center;
+}
+
+/* mediaqueries responsive */
+@media only screen and (max-width: 950px) {
+
+    .Categories-img {
+        width: 100px;
+        height: 100px;
+    }
+    .Category-name {
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width: 735px) {
+    .Categories-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .Categories-tittle-h1 {
+        font-size: 26px;
+    }
+    
+    .Categories-tittle-p {
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width: 435px) {
+    .Categories {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+}

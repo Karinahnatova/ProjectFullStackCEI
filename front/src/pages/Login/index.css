@@ -1,0 +1,97 @@
+/* Estilos para el formulario de login y register */
+/* contendor del fromulario */
+.Form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 5rem 1rem;
+}
+
+/* Titulo h2 de Login */
+.Form-h2 {
+    padding: 1rem;
+    font-size: 32px;
+}
+
+/* Los contendedores inputs del formulario */
+.Form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+
+/* label de los inputs */
+.Form-label {
+    padding: 0.5rem;
+}
+
+/* El input del form */
+.Form-input input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    padding: 1rem ;
+}
+
+/* los botones de enviar */
+.Form-submit-button {
+  width: 182px;
+  height: 58px;
+  background-color: rgba(221, 174, 171, 1);
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+/* mensaje de error que aparece en el login */
+.Form-error-message {
+    font-weight: 300;
+    color: rgb(190, 0, 0);
+    padding: 1rem;
+}
+
+/* h3 del register from */
+.Form-h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* mensaje de registro correcto */
+.Form-success-message {
+    text-align: center;
+    color: rgb(25, 197, 25);
+}
+
+/* Mediaquerie responsive */
+@media screen and (max-width: 450px){
+
+    .Form-h2 {
+        font-size: 22px;
+    }
+
+    .Form-label {
+        font-size: 14px;
+    } 
+
+     .Form-submit-button {
+        width: 132px;
+        height: 38px;
+        font-size: 16px;
+      }
+
+      .Form-input input{
+        border: none;
+        border-bottom: 1px solid black;
+        width: 200px;
+        font-size: 12px;
+    }
+
+
+
+}

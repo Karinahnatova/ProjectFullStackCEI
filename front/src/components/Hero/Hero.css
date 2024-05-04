@@ -1,0 +1,122 @@
+/* contenedor hero de la imagen */
+.Hero-img-container {
+  position: absolute;
+  width: 100%;
+  z-index: -100;
+  opacity: 0.9;
+  filter: brightness(0.85);
+}
+
+/* imagen del hero */
+.Hero-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* cuando estamos en versión mobil, aparece otra imágen en el hero */
+.Hero-img-mobile {
+    display: none;
+}
+
+/* texto del hero */
+.Hero-text {
+  padding: 5rem 0 0 6rem;
+  width: 45%;
+  height: 700px;
+  position: relative;
+  z-index: -90;
+}
+
+/* subtitulo del hero */
+.Hero-text-h4 {
+  color: rgba(221, 174, 171, 1);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* titulo del hero */
+.Hero-text-h1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: clamp(3rem, 4vw, 8rem);
+  padding: 1.5rem 0;
+}
+
+/* parrafo en italica del hero */
+.Hero-text-p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* mediaqueries responsive */
+@media screen and (max-width: 1030px) {
+    .Hero-text {
+        width: 80%;
+    } 
+
+    .Hero-text-h1 {
+        font-size: 3rem;
+      }
+
+      .Hero-text-p {
+        font-size: 12px;
+      }
+}
+
+@media screen and (max-width: 560px){
+    .Hero-text-h1 {
+        font-size: 2rem;
+      }
+
+      .Hero-text {
+        padding: 5rem 0 0 3rem;
+      }
+
+}
+
+@media screen and (max-width: 450px) {
+    .Hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 2rem 2rem;
+        width: 100%;
+      }
+      .Hero-text-h4 {
+        color: rgb(255, 255, 198);
+      }
+
+      .Hero-text-h1 {
+        font-size: 2rem;
+      }
+
+      .Hero-text-p {
+        font-size: 12px;
+      }
+
+      .Hero-img-mobile {
+        display: block;
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: top;
+
+      }
+
+    .Hero-img {
+        display: none;
+    }
+
+    .Hero-img-container {
+        position: absolute;
+        z-index: -100;
+        opacity: 0.9;
+        filter: brightness(0.75);
+      }
+      
+  
+}

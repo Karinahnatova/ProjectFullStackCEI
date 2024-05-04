@@ -1,0 +1,125 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index:200;
+}
+
+.Header-logo {
+    font-family: Lora;
+    font-weight: 400;
+}
+
+.Header-nav.isVisible {
+    display: none;
+}
+
+.Header-nav {
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 50rem; 
+    top: 4.5rem;
+    margin-left: -1.5rem;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header-icon-container {
+    margin: 0 0.5rem;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.Header-nav-li {
+    list-style: none;
+    
+
+}
+
+.Header-nav-li a:hover {
+    border: 1px solid rgb(112, 112, 112);
+}
+
+.Header-nav-li a{
+    text-decoration: none;
+    color: rgba(32, 32, 32, 1);
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    padding: 2rem;
+    margin: 0 2rem ;
+    text-align: center;
+
+}
+
+.Header-nav-li span{
+    text-decoration: none;
+    color: rgba(32, 32, 32, 1);
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    padding: 2rem;
+    margin: 0 2rem ;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.Header-nav-li span:hover {
+    border: 1px solid rgb(112, 112, 112);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .Header-nav {
+        width: 50%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 549px) {
+    .Header-nav {
+        height: 50rem; 
+        top: 4rem;
+        margin-left: -1.5rem;
+        padding-bottom: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .Header-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Header-menu-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Header-logo {
+        font-family: Lora;
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 450px) {
+    .Header-nav {
+        width: 50%;
+    }
+
+}
+

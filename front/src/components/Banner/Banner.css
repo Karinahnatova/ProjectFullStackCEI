@@ -1,0 +1,90 @@
+/* contenedor del banner */
+.Banners {
+    margin: 2rem 0;
+}
+
+/* banner de enfrente */
+.Banner-front {
+    background-color: rgb(130, 130, 130);
+    color: white;
+    font-weight: 800;
+    transform: skewY(6deg);  /* Inclinar el div */
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    padding-top: 1rem;
+    
+}
+
+/* banner de detrás */
+.Banner-back {
+    background-color: rgba(221, 174, 171, 1);
+    color: white;
+    font-weight: 800;
+    transform: skewY(-3deg); /* Inclinar el div */
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    margin-top: -3rem;
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
+/* Estilos para los elementos de texto dentro de los banners */
+.Banner-front span {
+    padding: 1rem;
+}
+
+.Banner-back span {
+    padding: 1rem;
+}
+
+.texto {
+    width: 100%;
+    overflow: hidden; /* No permitir saltos de línea */
+    white-space: nowrap; /* No permitir saltos de línea */
+    text-overflow: ellipsis; 
+}
+
+/* Mediaqueries responsive para pantallas hasta 1190px */
+@media (max-width: 1190px) {
+    .texto {
+        font-size: 13px; 
+    }
+
+    .Banner-front {
+        height: 35px;
+        padding-top: 0.5rem;
+    }
+
+    .Banner-back {
+        height: 35px;
+        padding-top: 0.5rem;
+    }
+}
+
+/* Mediaqueries responsive para pantallas hasta 600px */
+@media (max-width: 600px) {
+    .texto {
+        font-size: 10px;
+    }
+
+    .Banner-front {
+        height: 35px;
+    }
+
+    .Banner-back {
+        height: 35px;
+    }
+}
+
+/* Mediaqueries responsive para pantallas hasta 545px */
+@media (max-width: 545px) {
+    .Banners {
+        display: none;
+    }
+    
+}

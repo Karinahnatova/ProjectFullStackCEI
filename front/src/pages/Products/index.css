@@ -1,0 +1,145 @@
+/* contenedor de los productos */
+.Products {
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor de cada producto */
+.Product-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor de las imagenes */
+.Product-div-image {
+    position: relative; 
+}
+
+/* estilos de cada imagen */
+.Product-img {
+    width: 292px;
+    height: 378px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.Product-img:hover {
+    cursor: pointer;
+
+}
+
+/* icono de wishlist (no tiene funcionalidad, solo decoración) */
+.Product-like-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* descuento de cada producto */
+.Product-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(221, 174, 171, 1);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 4px 8px;
+    z-index: 7; 
+}
+
+/* precio */
+.Product-price {
+    font-weight: 600;
+    padding: 1rem;
+}
+
+/* nombre del producto */
+.Product-name {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* seccion de categorias */
+.Products-categories-ul {
+    display: flex;
+    list-style: none;
+    background-color: rgba(221, 174, 171, 1);
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+/* cada nombre de la categoria */
+.Products-categories-li {
+    padding: 2rem 3rem;
+    
+}
+
+/* estilo del hover */
+.Products-categories-li:hover {
+    background-color: rgb(230, 196, 194);
+    cursor: pointer;
+
+
+}
+
+/* titulo de cada categoria de productos */
+.Products-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* media queries responsive */
+@media screen and (max-width: 830px) {
+    .Products-categories-li {
+        font-size: 13px;
+        padding: 2rem 1rem;
+
+    }
+
+    .Products-h1 {
+        font-size: 25px;
+    }
+
+    .Product-img {
+        width: 192px;
+        height: 278px;
+        border-radius: 20px;
+    }
+
+    .Product-name {
+        font-size: 12px;
+    }
+
+    .Products {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .Products-categories-ul {
+        flex-wrap: wrap;
+    }
+    .Products-categories-li {
+        padding: 1rem 1rem;
+    }
+
+    .Products-h1 {
+        font-size: 20px;
+    }
+
+}

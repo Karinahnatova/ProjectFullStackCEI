@@ -1,0 +1,195 @@
+
+/* Estilos del Summary */
+.Cart-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 300px;
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.Cart-summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.Cart-summary-h4 {
+    font-size: 20px;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(203, 203, 203, 1);
+    width: 100%;
+}
+
+.Cart-summary-span {
+    padding: 1rem 2rem;
+}
+
+.Cart-summary-span-total {
+    background-color: rgba(203, 203, 203, 1);
+    width: 100%;
+}
+
+.Cart-summary-button {
+    background-color: rgba(221, 174, 171, 1);
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.Cart-summary-p {
+    font-size: 14px;
+    padding: 1rem;
+    color: rgb(122, 122, 243);
+}
+
+
+/* Estilos del dialogo */
+.Dialog-cart-title {
+    font-size: 32px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.Dialog-cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.Dialog-cart-p-empty {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.464);
+    background-color: white;
+}
+
+.Dialog-cart-name {
+    font-size: 14px;
+    font-weight: 700;
+    width: 200px;
+}
+
+.Dialog-cart-price {
+    color: rgb(233, 168, 188);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1rem;
+    width:100px;
+}
+
+.Dialog-cart-listitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.Dialog-cart-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.Dialog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Dialog-cart-discount {
+    position: absolute;
+    top: 15px;
+    left:20px;
+    background-color: rgba(221, 174, 171, 1);
+    color: white;
+    border-radius: 2px;
+    font-size: 9px;
+    padding: 2px 4px;
+    z-index: 7; 
+}
+
+.Cart-summary-span-total {
+    font-weight: 700;
+}
+
+.Dialog-cart-discount-message {
+    color: rgb(187, 187, 187);
+    font-weight: 300;
+    font-size: 10px;
+    width:100px;
+    padding-top: 0.2rem;
+    border-top: 1px solid rgb(208, 208, 208);
+}
+
+@media screen and (max-width: 600px) {
+    .Dialog-cart-title {
+        font-size: 25px;
+    }
+    
+    .Dialog-cart-img {
+        width: 95px;
+        height: 95px;
+    }
+    
+    .Dialog-cart-name {
+        font-size: 14px;
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .Dialog-cart-title {
+        font-size: 20px;
+    }
+
+    .Dialog-cart-listitem {
+        flex-direction: column;
+        width: 170px;
+    }
+
+    .Dialog-cart-name {
+        text-align: center;
+    }
+
+    .Dialog-cart-price {
+        text-align: center;
+        padding: 0;
+    }
+
+    .Dialog-cart-discount-message {
+        border-top: 1px solid rgb(242, 242, 242);
+    }
+
+    .Cart-summary {
+        width: 200px;
+    }
+    
+    .Cart-summary-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    
+    .Cart-summary-button {
+        width: 200px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .Dialog-cart-discount {
+        left:60px;
+    }
+
+}
